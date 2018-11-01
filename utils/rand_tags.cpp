@@ -5,6 +5,9 @@
 
 #include <string>
 #include <string.h>
+#if defined(WINDOWS) || defined(_WIN32)
+    #include "../Windows/WinFunctions.h"
+#endif
 #include "tlsh.h"
 
 static void html_contents(std::string &htmls);
