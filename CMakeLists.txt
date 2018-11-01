@@ -61,7 +61,7 @@ set(VERSION_PATCH 1)
 
 # TLSH uses only half the counting buckets.
 # It can use all the buckets now.
-set(TLSH_BUCKETS_128 1)
+set(TLSH_BUCKETS_256 1)
 if(TLSH_BUCKETS_48 EQUAL 1)
   set(TLSH_HASH "min hash")
   add_definitions(-DBUCKETS_48)
